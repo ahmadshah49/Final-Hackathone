@@ -31,23 +31,23 @@ const AppointmentForm = () => {
   };
 
   return (
-   <>
+   <div className='flex flex-col justify-center items-center'>
    <h1 className='mx-24 text-2xl font-bold pt-2'>Apponiment</h1>
-    <form onSubmit={handleSubmit} className="w-full md:w-md mt-8">
+    <form onSubmit={handleSubmit} className="w-full flex flex-col justify-center items-center md:w-md mt-8">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mx-4 md:mx-8">
     <div className="mb-4 lg:mx-20 text-xl">
       <label htmlFor="firstName" className="block">
         First Name:
       </label>
       <input
-        type="text"
-        id="firstName"
-        name="firstName"
-        placeholder='First Name'
-        value={formData.firstName}
-        onChange={handleChange}
-        className="mt-1 p-2 w-full md:w-80 border rounded-md"
-      />
+  type="text"
+  id="firstName"
+  name="firstName"
+  placeholder='First Name'
+  value={formData.firstName}
+  onChange={handleChange}
+  className="mt-1  py-8 p-4 outline-none w-full md:w-80 border rounded-md"
+/>
     </div>
     <div className="mb-4 text-xl">
       <label htmlFor="lastName" className="block">
@@ -60,7 +60,7 @@ const AppointmentForm = () => {
         placeholder='Last Name'
         value={formData.lastName}
         onChange={handleChange}
-        className="mt-1 p-2 w-full md:w-80 border rounded-md"
+        className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
       />
     </div>
   </div>
@@ -77,7 +77,7 @@ const AppointmentForm = () => {
         placeholder='Email'
         value={formData.email}
         onChange={handleChange}
-        className="mt-1 p-2 w-full md:w-80 border rounded-md"
+        className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
       />
     </div>
    
@@ -92,7 +92,7 @@ const AppointmentForm = () => {
             placeholder='Enter your mobile number'
             value={formData.mobileNumber}
             onChange={handleChange}
-            className="mt-1 p-2 w-full md:w-80 border rounded-md"
+            className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
             required
           />
         </div>
@@ -110,7 +110,7 @@ const AppointmentForm = () => {
         placeholder='CNIC'
         value={formData.nic}
         onChange={handleChange}
-        className="mt-1 p-2 w-full md:w-80 border rounded-md"
+        className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
       />
     </div>
    
@@ -125,7 +125,7 @@ const AppointmentForm = () => {
     placeholder='YYYY-MM-DD'
     value={formData.dob}
     onChange={handleChange}
-    className="mt-1 p-2 w-full md:w-80 border rounded-md"
+    className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
     required
   />
 </div>
@@ -142,7 +142,7 @@ const AppointmentForm = () => {
             name="gender"
             value={formData.gender}
             onChange={handleChange}
-            className="mt-1 p-2 w-full md:w-80 border rounded-md"
+            className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
             required
           >
             <option value="" disabled>
@@ -164,7 +164,7 @@ const AppointmentForm = () => {
     placeholder='Select appointment date'
     value={formData.appointmentDate}
     onChange={handleChange}
-    className="mt-1 p-2 w-full md:w-80 border rounded-md"
+    className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
     required
   />
 </div>
@@ -181,7 +181,7 @@ const AppointmentForm = () => {
     placeholder='Enter department name'
     value={formData.departmentName}
     onChange={handleChange}
-    className="mt-1 p-2 w-full md:w-80 border rounded-md"
+    className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
     required
   />
 </div>
@@ -196,7 +196,7 @@ const AppointmentForm = () => {
     placeholder='Enter doctor name'
     value={formData.doctorName}
     onChange={handleChange}
-    className="mt-1 p-2 w-full md:w-80 border rounded-md"
+    className="mt-1  py-8 p-4 w-full md:w-80 border rounded-md"
     required
   />
 </div>
@@ -206,14 +206,15 @@ const AppointmentForm = () => {
     <div class="flex justify-center mr-32">
   <button
     type="submit"
-    class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mt-4 md:mt-0"
+    
+    className='bg-[#8e81cb] my-8 mx-auto w-fit cursor-pointer text-white rounded-xl shadow-md font-bold px-6 py-2 '
   >
     Register
   </button>
 </div>
 
 </form>
-</>
+</div>
   );
 };
 

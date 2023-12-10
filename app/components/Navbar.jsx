@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <div className='flex h-[75px] fixed w-full shadow-2xl bg-white/25 z-50 justify-between px-8 py-4  items-center '>
+    <div className='flex h-[75px] fixed w-full shadow-2xl bg-white z-50 justify-between px-8 py-4  items-center '>
 <div className='flex items-center gap-2'>
   <Image
   src={"/NavbarLogo.jpg"}
@@ -21,8 +21,8 @@ const Navbar = () => {
   <li className='hover:bg-[#cee1ff] py-2 px-2 rounded-lg '><Link href={"/history"}>Medical History</Link></li>
 </ul>
 <div className='flex gap-4 py-2'>
-  <ButtonLight/>
-   <ButtonDark title="Register"/>
+<Link className='bg-white cursor-pointer  w-fit text-black rounded-xl shadow-md font-bold px-6 py-2 ' href={"/signin"}>Sign in</Link>
+  <Link className='bg-[#8e81cb] w-fit cursor-pointer text-white rounded-xl shadow-md font-bold px-6 py-2 ' href={"/signup"}>Sign up</Link>
 </div>
 
     </div>

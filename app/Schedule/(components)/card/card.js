@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Card(props) {
     return (
       <>
-        <section className="text-gray-600 shadow-2xl body-font rounded-full">
+        <section className="text-gray-600 shadow-2xl body-font ml-4">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
               <div className="p-4">

@@ -5,7 +5,7 @@ export default function page() {
   return (
     <div className='main'>
       <div className='left'>
-        <h1 className='font-bold text-2xl py-4'>Sign In</h1>
+        <h1 className='font-bold text-4xl py-4'>Sign In</h1>
         <h2>Please Login To Continue</h2>
         <p className='signinpera'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit culpa sit ni
           si, earum expedita harum voluptate pariatur fugit moles</p>
